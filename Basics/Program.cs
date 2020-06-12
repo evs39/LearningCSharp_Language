@@ -6,10 +6,13 @@ namespace Basics
     {
         static void Main(string[] args)
         {
-            DataTypes();
+            // VaraibleExamples();
+            // LiteralExamples();
+            // DataTypeExamples();
+            ConsoleExamples();
         }
 
-        static void Varaibles()
+        static void VaraibleExamples()
         {
             // type name
             string name;
@@ -24,7 +27,7 @@ namespace Basics
             Console.WriteLine(name1);
         }
 
-        static void Literal()
+        static void LiteralExamples()
         {
             // logic
             Console.WriteLine(true);
@@ -52,7 +55,7 @@ namespace Basics
             Console.WriteLine();
         }
 
-        static void DataTypes()
+        static void DataTypeExamples()
         {
             bool alive = true; // value type 
             Console.WriteLine(alive);
@@ -113,6 +116,15 @@ namespace Basics
                 + '\t'
                 + dcml.ToString()
                 );
+        }
+    
+        static void ConsoleExamples()
+        {
+            Console.Write("Press any key to continue: ");
+            Console.ReadKey();
+            Console.Write("Please enter any string: ");
+            var str = Console.ReadLine();
+            Console.WriteLine("Your string is: " + str);
         }
     }
 }
